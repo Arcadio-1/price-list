@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: color(dark);
+}
+.container {
+  max-width: 40rem;
+  margin: 1rem auto;
+}
+.main {
+  padding: 0.5rem 3rem;
+  text-transform: capitalize;
+  // background-color: rgba(color(primary), 0.4);
+  background-color: lighten(color(primary), 50);
+}

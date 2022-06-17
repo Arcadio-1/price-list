@@ -1,0 +1,15 @@
+.expenses-filter {
+  &__control {
+    @include dFlex(space-between);
+    select {
+      cursor: pointer;
+      padding: 0.2rem 1rem;
+      border: 2px solid color(secondary);
+      color: color(secondary);
+      background-color: color(primary);
+      &:hover {
+        background-color: lighten(color(primary), 10);
+      }
+    }
+  }
+}

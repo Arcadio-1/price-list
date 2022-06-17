@@ -1,0 +1,32 @@
+.chart {
+  @include dFlex(space-evenly);
+  border-radius: 10px;
+  background-color: rgb(56, 41, 57);
+  padding: 1.5rem;
+}
+.chartBar {
+  text-align: center;
+  @include dFlex();
+  flex-direction: column;
+  &-inner {
+    @include dFlex;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    width: 0.7rem;
+    height: 10rem;
+    background-color: lighten(color(primary), 30);
+  }
+  &-fill {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: color(secondary);
+    width: 100%;
+    height: 10%;
+    margin-top: auto;
+  }
+  &-lable {
+    text-transform: capitalize;
+    color: color(secondary);
+  }
+}
